@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>SGPA To Percentage Converter</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .container {
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #222831;
+        padding: 15px;
+        margin-top: 100px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 10px rgb(24, 20, 20);
+      }
+
+      .btn {
+        margin: 20px;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      label {
+        font-size: 20px;
+        padding: 20px;
+      }
+
+      h4 {
+        position: absolute;
+        top: 50px;
+        right: 490px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>SGPA To Percentage Converter</h4>
+    <div class="container">
+      <form action="/" method="POST">
+        <div class="form-group">
+          <label for="SGPA">SGPA</label>
+          <input type="text" class="form-control" name="sgpa" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Calculate
+        </button>
+
+        <div class="form-group">
+          <label for="percentage">Percentage</label>
+          <input
+            type="text"
+            class="percentage form-control"
+            name="percentage"
+            readonly
+          />
+        </div>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
