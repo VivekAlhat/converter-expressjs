@@ -17,47 +17,7 @@
     />
 
     <title>SGPA To Percentage Converter</title>
-
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-
-      .container {
-        font-weight: bold;
-        color: #ffffff;
-        background-color: #222831;
-        padding: 15px;
-        margin-top: 100px;
-        width: 350px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 5px 10px rgb(24, 20, 20);
-      }
-
-      .btn {
-        margin: 20px;
-      }
-
-      input {
-        width: 100%;
-      }
-
-      label {
-        font-size: 20px;
-        padding: 20px;
-      }
-
-      h4 {
-        position: absolute;
-        top: 50px;
-        right: 490px;
-      }
-    </style>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <h4>SGPA To Percentage Converter</h4>
@@ -73,13 +33,7 @@
         </button>
 
         <div class="form-group">
-          <label for="percentage">Percentage</label>
-          <input
-            type="text"
-            class="percentage form-control"
-            name="percentage"
-            readonly
-          />
+          <label for="percentage">Percentage : <%= percentage %></label>
         </div>
       </form>
     </div>

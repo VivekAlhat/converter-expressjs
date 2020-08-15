@@ -1,19 +1,24 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const ejs = require("ejs");
+
+var percentage;
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
+app.set("view engine", "ejs");
 
 app.listen(3000, function () {
-  console.log("Server started successfully on port 3000");
+  console.log("Server is up and running");
 });
 
 app.get("/", function (request, response) {
-  response.sendFile(__dirname + "/index.html");
+  response.render("index", { percentage: "00.00" });
 });
 
 app.post("/", function (request, response) {
   var sgpa = Number(request.body.sgpa);
-  var percentage = sgpa * 10 - 7.5;
-  response.send("Your percentage : " + percentage);
+  percentage = (sgpa * 8.8).toFixed(2);
+  response.render("index", { percentage: percentage });
 });
